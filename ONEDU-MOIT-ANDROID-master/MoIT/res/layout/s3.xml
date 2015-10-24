@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    xmlns:custom="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/s3_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <vnp.org.moit.custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_25dp"
+            android:text="CHÀO MỪNG"
+            android:textColor="#165aa1"
+            android:textSize="@dimen/dimen_25dp"
+            android:textStyle="bold"
+            custom:txtCustomType="Bold" />
+
+        <vnp.org.moit.custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_13dp"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimen_5dp"
+            android:text="Đăng nhập bằng Facebook\nlà cách tốt nhất để trải nghiệm"
+            android:textColor="#585858"
+            android:textSize="@dimen/dimen_16dp"
+            app:txtCustomType="Regular" />
+
+        <ImageButton
+            android:id="@+id/s3_btn_loginfacebook"
+            android:layout_width="@dimen/dimen_290dp"
+            android:layout_height="@dimen/dimen_44dp"
+            android:layout_marginBottom="@dimen/dimen_35dp"
+            android:background="@drawable/s1_btn"
+            android:scaleType="fitXY"
+            android:src="@drawable/f" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/s3_img_avatar"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_100dp"
+                android:layout_marginLeft="@dimen/dimen_15dp"
+                android:background="@drawable/createavatar" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_30dp" >
+
+                <vnp.org.moit.custom.CustomEditText
+                    android:id="@+id/s3_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:layout_marginBottom="@dimen/dimen_4dp"
+                    android:background="@drawable/bg_editext_quare"
+                    android:gravity="center|left"
+                    android:hint="Nhập tên"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:singleLine="true"
+                    android:textColor="#545454"
+                    android:textSize="@dimen/dimen_16dp"
+                    app:txtCustomType="Regular" />
+
+                <vnp.org.moit.custom.CustomEditText
+                    android:id="@+id/s3_mk"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_48dp"
+                    android:background="@drawable/bg_editext_quare"
+                    android:gravity="center|left"
+                    android:hint="Nhập mật khẩu"
+                    android:paddingLeft="@dimen/dimen_10dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:singleLine="true"
+                    android:textColor="#545454"
+                    android:textSize="@dimen/dimen_16dp"
+                    android:visibility="gone"
+                    app:txtCustomType="Regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <vnp.org.moit.custom.CustomTextView
+            android:id="@+id/s3_btn_dangnhap"
+            android:layout_width="@dimen/dimen_210dp"
+            android:layout_height="@dimen/dimen_44dp"
+            android:layout_marginTop="@dimen/dimen_35dp"
+            android:background="@drawable/s1_btn"
+            android:gravity="center"
+            android:text="ĐĂNG NHẬP"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_16dp"
+            android:textStyle="bold"
+            custom:txtCustomType="Semibold" />
+    </LinearLayout>
+
+</LinearLayout>

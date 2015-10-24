@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/home_top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_0dp"
+        android:orientation="vertical"
+        android:visibility="visible" >
+    </LinearLayout>
+  
+
+    <RelativeLayout
+        android:id="@+id/home_main_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/home_menu"
+        android:layout_below="@+id/home_top" >
+
+        <vnp.org.moit.view.InboxView
+            android:id="@+id/home_inbox"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </vnp.org.moit.view.InboxView>
+
+        <vnp.org.moit.view.ForumView
+            android:id="@+id/home_forum"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </vnp.org.moit.view.ForumView>
+
+        <vnp.org.moit.view.NewFeedView
+            android:id="@+id/newfeed"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+        </vnp.org.moit.view.NewFeedView>
+
+        <vnp.org.moit.view.BangDiemView
+            android:id="@+id/bangdiem"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:visibility="gone" >
+        </vnp.org.moit.view.BangDiemView>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/home_top"
+        android:background="#cccccc" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_above="@+id/home_menu"
+        android:background="#cccccc" />
+
+    <RadioGroup
+        android:id="@+id/home_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <vnp.org.moit.custom.CustomMenuRadioButton
+            android:id="@+id/home_menu_1"
+            style="@style/style_text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_menu_1"
+            android:button="@null"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="@dimen/dimen_8dp"
+            android:text="Thông báo"
+            android:textSize="@dimen/dimen_9dp" />
+
+        <vnp.org.moit.custom.CustomMenuRadioButton
+            android:id="@+id/home_menu_2"
+            style="@style/style_text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_menu_2"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="@dimen/dimen_8dp"
+            android:text="Bản tin"
+            android:textSize="@dimen/dimen_9dp" />
+
+        <vnp.org.moit.custom.CustomMenuRadioButton
+            android:id="@+id/home_menu_4"
+            style="@style/style_text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_menu_4"
+            android:button="@null"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="@dimen/dimen_8dp"
+            android:text="Bảng điểm"
+            android:textSize="@dimen/dimen_9dp" />
+
+        <vnp.org.moit.custom.CustomMenuRadioButton
+            android:id="@+id/home_menu_3"
+            style="@style/style_text_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home_menu_3"
+            android:button="@null"
+            android:gravity="center_horizontal|bottom"
+            android:paddingBottom="@dimen/dimen_8dp"
+            android:text="Diễn đàn"
+            android:textSize="@dimen/dimen_9dp" />
+    </RadioGroup>
+
+</RelativeLayout>

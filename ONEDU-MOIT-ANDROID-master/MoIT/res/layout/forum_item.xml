@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    xmlns:custom="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/dimen_13dp"
+            android:layout_height="@dimen/dimen_13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/forum_1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageView1"
+            android:layout_toRightOf="@+id/inboxitem_avatar"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10dp" >
+
+            <vnp.org.moit.custom.CustomTextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="TextView"
+                android:textColor="#585858"
+                android:textSize="@dimen/dimen_13dp"
+                android:textStyle="bold"
+                custom:txtCustomType="Semibold" />
+
+            <vnp.org.moit.custom.CustomTextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="TextView"
+                android:textColor="#a9a9a9"
+                android:textSize="@dimen/dimen_10dp"
+                custom:txtCustomType="Regular" />
+
+            <LinearLayout
+                android:id="@+id/control_newiewm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/ImageView01"
+                    android:layout_width="@dimen/dimen_15dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:src="@drawable/heart" />
+
+                <vnp.org.moit.custom.CustomTextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/dimen_5dp"
+                    android:text="150"
+                    android:textColor="#585858"
+                    android:textSize="@dimen/dimen_10dp"
+                    custom:txtCustomType="Regular" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/dimen_15dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:src="@drawable/comment" />
+
+                <vnp.org.moit.custom.CustomTextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dimen_5dp"
+                    android:paddingRight="@dimen/dimen_5dp"
+                    android:text="9"
+                    android:textColor="#585858"
+                    android:textSize="@dimen/dimen_10dp"
+                    custom:txtCustomType="Regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/inboxitem_avatar"
+            android:layout_width="@dimen/dimen_70dp"
+            android:layout_height="@dimen/dimen_70dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/no_image" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/main"
+        android:background="#cccccc" />
+
+</RelativeLayout>

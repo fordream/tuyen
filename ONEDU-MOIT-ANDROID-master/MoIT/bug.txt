@@ -1,0 +1,16 @@
+
+
+3. [Tạo topic] Add ảnh = camera thì App bị chạy lại từ đầu
+2. [Inbox] Filter theo học sinh không hoạt động                         // can nho chien giup
+
+
+
+
+
+
+
+[5:43:45 PM | Edited 5:45:14 PM] mai lan anh: 1. [Comnent] Avatar bị thay đổi sau khi back ra
+[5:46:45 PM | Edited 5:47:05 PM] mai lan anh: 7. [Comment] Khi Send comment thành công => Nên để ẩn keyboard
+4. [Topic detail] Add 6 ảnh thành công => Các ảnh hiển thị k full, không upload được hết ảnh, ảnh bị duplicate
+5. [Push noti] Tap vào push noti => Hiển thị màn hình Inbox nhưng không có dữ liệu
+[5:46:20 PM | Edited 5:48:23 PM] mai lan anh: 6. "Bạn đã like chủ đề này", "Bạn đã unlike topic" => Nên bỏ

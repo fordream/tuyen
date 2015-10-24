@@ -1,0 +1,7 @@
+﻿
+test ngày 06/10/2015:
+
+1) Trên Android, vào phần Bảng điểm tổng kết, khi xem "Tất cả" thì hiện đúng Bảng điểm ứng với từng học sinh, nhưng khi chọn xem theo học sinh A thì lại điểm của học sinh B, và ngược lại, xem theo học sinh B thì lại hiện điểm học sinh A;
+(test với số đt 0987525272)
+
+2) 

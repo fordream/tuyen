@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp" >
+
+        <ImageView
+            android:id="@+id/inboxitem_avatar"
+            android:layout_width="@dimen/dimen_35dp"
+            android:layout_height="@dimen/dimen_35dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/no_image_round" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/inboxitem_avatar"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_0dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <!-- android:textStyle="bold" -->
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/style_text_semibold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/textView2"
+                    android:text="TextView"
+                    android:textColor="#585858"
+                    android:textSize="@dimen/dimen_13dp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    style="@style/style_text_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="TextView"
+                    android:textColor="#585858"
+                    android:textSize="@dimen/dimen_10dp" />
+
+                <ImageView
+                    android:layout_width="@dimen/dimen_12dp"
+                    android:layout_height="@dimen/dimen_12dp"
+                    android:layout_alignRight="@+id/textView1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_5dp"
+                    android:background="@drawable/dongho" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/style_text_normal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:lineSpacingExtra="@dimen/dimen_3dp"
+                android:text="TextView"
+                android:textColor="#585858"
+                android:textIsSelectable="true"
+                android:textSize="@dimen/dimen_10dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <!-- android:textStyle="bold" -->
+
+                <TextView
+                    android:id="@+id/chiase"
+                    style="@style/style_text_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:paddingLeft="@dimen/dimen_0dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:text="Chia sẻ"
+                    android:textColor="@color/color_blue_coaban"
+                    android:textSize="@dimen/dimen_10dp" />
+                <!-- android:textStyle="bold" -->
+
+                <TextView
+                    android:id="@+id/phanhoi"
+                    style="@style/style_text_bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:paddingLeft="@dimen/dimen_0dp"
+                    android:paddingRight="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:text="Phản hồi"
+                    android:textColor="@color/color_blue_coaban"
+                    android:textSize="@dimen/dimen_10dp" />
+            </LinearLayout>
+            <!--
+            <it.sephiroth.android.library.widget.HListView
+            android:id="@+id/hListView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_100dp"
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:listSelector="@android:color/transparent"
+            android:padding="0px"
+            android:spacing="0px" />
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/main"
+        android:background="#cccccc" />
+
+</LinearLayout>

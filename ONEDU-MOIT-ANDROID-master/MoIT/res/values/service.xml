@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="service_url">http://appapi.one.edu.vn/AppEduWebService.asmx/</string>
+    <string name="userver_base">http://one.edu.vn</string>
+
+</resources>

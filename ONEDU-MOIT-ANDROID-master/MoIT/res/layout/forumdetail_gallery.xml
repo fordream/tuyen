@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    xmlns:custom="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <vnp.org.moit.custom.CustomTextView
+        android:id="@+id/forum_top_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp"
+        android:text="Tạo chủ đề mới"
+        android:textColor="#585858"
+        android:textSize="@dimen/dimen_16dp"
+        android:textStyle="bold"
+        custom:txtCustomType="Semibold" />
+
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_200dp" />
+
+    <RelativeLayout
+        android:id="@+id/m1x"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_45dp"
+        android:background="#f5f5f5" >
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="@dimen/dimen_45dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/left" />
+
+        <ImageView
+            android:id="@+id/right"
+            android:layout_width="@dimen/dimen_45dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/right" />
+
+        <vnp.org.moit.custom.CustomTextView
+            android:id="@+id/forum_top_title_page"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Tạo chủ đề mới"
+            android:textColor="#9c9c9c"
+            android:textSize="@dimen/dimen_15dp"
+            android:textStyle="bold"
+            custom:txtCustomType="Regular" />
+    </RelativeLayout>
+
+    <vnp.org.moit.custom.CustomTextView
+        android:id="@+id/forum_top_title_page_content"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:lineSpacingExtra="@dimen/dimen_3dp"
+        android:padding="@dimen/dimen_10dp"
+        android:text="Tạo chủ đề mới"
+        android:textColor="#737373"
+        android:textSize="@dimen/dimen_15dp"
+        custom:txtCustomType="Regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#e5e5e5" />
+
+    <vnp.org.moit.custom.CustomTextView
+        custom:txtCustomType="Bold"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimen_10dp"
+        android:text="BÌNH LUẬN"
+        android:textColor="#585858"
+        android:textSize="@dimen/dimen_15dp"
+        android:textStyle="bold" />
+
+</LinearLayout>

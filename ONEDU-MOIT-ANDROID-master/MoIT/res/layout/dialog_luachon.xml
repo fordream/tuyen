@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    xmlns:custom="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/forum_top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/dialog_thongbao_btn_2"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:padding="@dimen/dimen_16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/x" />
+
+        <vnp.org.moit.custom.CustomTextView
+            android:id="@+id/txt1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Tạo chủ đề mới"
+            android:textColor="#585858"
+            android:textSize="@dimen/dimen_16dp"
+            android:textStyle="bold"
+            custom:txtCustomType="Semibold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#cccccc" />
+
+    <GridView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="2" >
+    </GridView>
+
+</LinearLayout>

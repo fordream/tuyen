@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    xmlns:custom="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <WebView
+        android:id="@+id/feeddetail_web"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e5e5e5" />
+
+    <vnp.org.moit.custom.CustomTextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:padding="@dimen/dimen_10dp"
+        android:text="BÌNH LUẬN"
+        android:textColor="#585858"
+        android:textSize="@dimen/dimen_15dp"
+        android:textStyle="bold"
+        custom:txtCustomType="Bold" />
+
+</LinearLayout>

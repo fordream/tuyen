@@ -1,0 +1,18 @@
+﻿
+1) Mục News Feed, Khi click vào link "Đọc tiếp" thì lại hiện mục nhập comment (test trên bản Android)
+
+2) Main menu: vẫn đang để tiếng Anh: Inbox, News Feeds, Forums (test trên bản Android)
+
+3) Trước khi cài app thì phụ huynh A có 2 con học 2 trường, sau khi Xác thực số điện thoại thì sẽ hiện được tên 2 trường này. 
+Nhưng sau đó thêm đứa con thứ 3 vào trường thứ 3 thì hệ thống chưa refresh lại được danh sách đẩy đủ 3 trường (test trên Android). Khi xóa học sinh (phụ huynh) khỏi trường thì vẫn hiện danh sách trường trong app.
+
+4) Mục tin tức, sau khi đăng 1 tin mới thì một lúc lâu sau (khoảng 1 tiếng) mới hiện trên điện thoại --> nên có chế độ tự động get được các tin mới nhất về, ví dụ: khi user tap vào nut "News Feed" thì sẽ get tin mới về, hoặc khi vuốt hết các tin xuống dưới thì sẽ get tin mới về (test cả trên 2 bản iOS và Android)
+
+5) Mục tin tức, có tin không hiện được ảnh đại diện. Trường hợp k có ảnh đại diện thì cũng nên ẩn cái khung ảnh default đi. (test trên Android)
+
+6) Mục comment phần tin tức và diễn đàn vẫn để tiếng Anh (Enter your comment, Send ) (test trên Android)
+
+7) Khi client nhận được Notify thì nên sửa tên của notify từ "Education" thành "ONE.edu.vn"
+
+8) Khi một bản tin đã được xóa khỏi server, nhưng trên client vẫn còn hiển thị (chưa được refresh), khi đó, nếu user nhập comment thì sẽ báo lỗi.
+

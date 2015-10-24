@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    xmlns:custom="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    android:id="@+id/background"
+    android:layout_width="@dimen/dimen_90dp"
+    android:layout_height="@dimen/dimen_100dp"
+    android:background="@drawable/diem_first"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="@dimen/dimen_15dp"
+        android:layout_height="@dimen/dimen_20dp"
+        android:background="@drawable/vang" />
+
+    <vnp.org.moit.custom.CustomTextView
+        android:id="@+id/mon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_28dp"
+        android:background="@null"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Mon Hoa"
+        android:textColor="#555555"
+        android:textColorHint="#555555"
+        android:textSize="@dimen/dimen_10dp"
+        custom:txtCustomType="Regular" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#c6c6c6" />
+
+    <vnp.org.moit.custom.CustomTextView
+        android:id="@+id/diem"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="8.08"
+        android:textColor="#585858"
+        android:textSize="@dimen/dimen_24dp"
+        android:textStyle="bold"
+        custom:txtCustomType="Semibold" />
+
+</LinearLayout>

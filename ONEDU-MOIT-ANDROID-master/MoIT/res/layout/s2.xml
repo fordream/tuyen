@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    xmlns:custom="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/s2_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <vnp.org.moit.custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_18dp"
+            android:text="TUYỆT!"
+            android:textColor="#165aa1"
+            android:textSize="@dimen/dimen_25dp"
+            android:textStyle="bold"
+            custom:txtCustomType="Bold" />
+
+        <vnp.org.moit.custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chúng tôi đã gửi 1 mã tới SĐT:"
+            android:textColor="#585858"
+            android:textSize="@dimen/dimen_16dp"
+            custom:txtCustomType="Regular" />
+
+        <vnp.org.moit.custom.CustomTextView
+            android:id="@+id/s2_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_8dp"
+            android:layout_marginTop="@dimen/dimen_8dp"
+            android:text="0988093694"
+            android:textColor="#165aa1"
+            android:textSize="@dimen/dimen_16dp"
+            android:textStyle="bold"
+            custom:txtCustomType="Bold" />
+
+        <vnp.org.moit.custom.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_30dp"
+            android:text="Vui lòng nhập mã bên dưới"
+            android:textColor="#585858"
+            android:textSize="@dimen/dimen_16dp"
+            custom:txtCustomType="Regular" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center" >
+
+            <vnp.org.moit.custom.CustomEditText
+                android:id="@+id/s2_edt_1"
+                android:layout_width="@dimen/dimen_67dp"
+                android:layout_height="@dimen/dimen_67dp"
+                android:background="@drawable/bg_editext_quare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#545454"
+                android:textSize="@dimen/dimen_25dp"
+                custom:txtCustomType="Regular" />
+
+            <vnp.org.moit.custom.CustomEditText
+                android:id="@+id/s2_edt_2"
+                android:layout_width="@dimen/dimen_67dp"
+                android:layout_height="@dimen/dimen_67dp"
+                android:layout_marginLeft="@dimen/dimen_5dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:background="@drawable/bg_editext_quare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:textColor="#545454"
+                android:textSize="@dimen/dimen_25dp"
+                custom:txtCustomType="Regular" />
+
+            <vnp.org.moit.custom.CustomEditText
+                android:id="@+id/s2_edt_3"
+                android:layout_width="@dimen/dimen_67dp"
+                android:layout_height="@dimen/dimen_67dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:background="@drawable/bg_editext_quare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:textColor="#545454"
+                android:textSize="@dimen/dimen_25dp"
+                custom:txtCustomType="Regular" />
+
+            <vnp.org.moit.custom.CustomEditText
+                android:id="@+id/s2_edt_4"
+                android:layout_width="@dimen/dimen_67dp"
+                android:layout_height="@dimen/dimen_67dp"
+                android:background="@drawable/bg_editext_quare"
+                android:gravity="center"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:textColor="#545454"
+                android:textSize="@dimen/dimen_25dp"
+                custom:txtCustomType="Regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:gravity="center" >
+
+            <vnp.org.moit.custom.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không nhận được mã?"
+                android:textColor="#165aa1"
+                android:textSize="@dimen/dimen_16dp"
+                custom:txtCustomType="Regular" />
+
+            <vnp.org.moit.custom.CustomTextView
+                android:id="@+id/s2_txt_guilai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_2dp"
+                android:text="Gửi lại"
+                android:textColor="#165aa1"
+                android:textSize="@dimen/dimen_16dp"
+                custom:txtCustomType="Regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_70dp"
+            android:gravity="center" >
+
+            <vnp.org.moit.custom.CustomTextView
+                android:id="@+id/s2_btn_1"
+                android:layout_width="@dimen/dimen_142dp"
+                android:layout_height="@dimen/dimen_44dp"
+                android:layout_marginRight="@dimen/dimen_5dp"
+                android:background="@drawable/s2_btn"
+                android:gravity="center"
+                android:text="QUAY LẠI"
+                android:textColor="#545454"
+                android:textSize="@dimen/dimen_16dp"
+                custom:txtCustomType="Semibold" />
+
+            <vnp.org.moit.custom.CustomTextView
+                android:id="@+id/s2_btn_2"
+                android:layout_width="@dimen/dimen_142dp"
+                android:layout_height="@dimen/dimen_44dp"
+                android:background="@drawable/s1_btn"
+                android:gravity="center"
+                android:text="TIẾP TỤC"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/dimen_16dp"
+                custom:txtCustomType="Semibold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

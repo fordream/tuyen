@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 330478553722126 -->
+    <!-- 619798398123472 -->
+    <string name="facebook_app_id">330478553722126</string>
+    <string name="error_network">Vui lòng kiểm tra lại mạng.</string>
+    <string name="app_name">Edu SMS</string>
+    <string name="str001">Sai định dạng SDT, vui lòng kiểm tra lại</string>
+    <string name="guilai" formatted="false"> %sGửi lại%s</string>
+    <string name="s2_input">Bạn cần nhập mã.</string>
+    <string name="s2_xac_nhan_gui_lai">Bạn có chắc muốn nhận một mã xác nhận mới?</string>
+    <string name="s2_xac_nhan_gui_lai_5p">Hệ thống sẽ gửi lại mã xác nhận mới trong vòng 05 phút</string>
+    <string name="boqua">Bỏ qua</string>
+    <string name="dongy">ĐỒNG Ý</string>
+    <string name="huy">HỦY</string>
+    <string name="s2_xacnhan_fail">Mã xác nhận ko đúng hoặc đã hết hiệu lực</string>
+    <string name="bancochackhongnhapanhdaidien">Bạn có chắc không muốn nhập ảnh đại diện?</string>
+    <string name="vuilongnhapten">Vui lòng nhập tên</string>
+    <string name="nhapdanh">Nhập Ảnh</string>
+    <string name="ok">OK</string>
+    <string name="first_use">Chào mừng bạn sử dụng dịch vụ\ncủa EDU SMS. Bạn có thể bắt đầu\nđọc các bản tin của nhà trường,\nnhận tin nhắn và tham gia diễn đàn\nvới các phụ huynh khác tại đây</string>
+    <string name="khongthetaotopic">Thực hiện không thành công</string>
+    <string name="khongtheuploadanh">Gặp vấn đề trong quá trình upload ảnh.</string>
+    <string name="uploadanhthanhcong">Upload ảnh thành công, Ấn OK để đóng màn hình.</string>
+    <string name="luachonhocsinh">Chọn học sinh</string>
+    <string name="luachontruong">Chọn trường</string>
+    <string name="tatcacactruong">Tất cả các trường</string>
+    <string name="banmuonxoaanh">Bạn muốn loại bức ảnh này?</string>
+    <string name="vuilongnhaptieude">Vui lòng nhập tiêu đề chủ đề.</string>
+    <string name="vuilongnhapnoidung">Vui lòng nhập nội dung chủ đề.</string>
+    <string name="createtopicthanhcong">Tạo chủ đề thành công</string>
+    <string name="can_not_like">Thực hiện không thành công</string>
+    <string name="like_topic_success">Bạn đã like chủ đề này.</string>
+    <string name="banchuanhapcomment">Bạn cần nhập comment.</string>
+    <string name="reportsuccess">Gửi thông báo thành công</string>
+    <string name="reportfalse">Gửi thông báo thất bại</string>
+    <string name="banmuonreportcomment">Bạn muốn report comment?</string>
+    <string name="nhapanhdaidientopic">Bạn cần chọn ảnh đại diện của topic.</string>
+    <string name="addcommentfail">Viết comment thất bại.</string>
+    <string name="addcommentsuccess">Viết comment thành công</string>
+    <string name="likesuccess">Bạn đã like thành công.</string>
+    <string name="likefail">Thực hiện không thành công</string>
+    <string name="reportcommentsuccess">Gửi thông báo thành công</string>
+    <string name="reportfail">Gửi thông báo thất bại</string>
+    <string name="tatcahocsinh">Tất cả học sinh</string>
+    <string name="phanhoitinnhan">Phản hồi tin nhắn %s</string>
+    <string name="banphainhapfeedback">Vui lòng nhập nội dung tin nhắn cần phản hồi.</string>
+    <string name="feedbackthanhcong">Thành công! Cảm ơn bạn đã gửi phản hồi tới nhà trường</string>
+    <string name="unlikesuccess">Bạn đã unlike thành công.</string>
+    <string name="unlike_topic_success">Bạn đã unlike topic.</string>
+    <string name="khongthanhcong">Thực hiện chưa thành công, Bạn vui lòng kiểm tra lại.</string>
+    <string name="notification_message_from_school">Bạn có tin nhắn mới từ trường %s</string>
+    <string name="notification_message">Bạn có tin nhắn mới</string>
+    <string name="chunhat">Chủ nhật</string>
+    <string name="thu2">Thứ hai</string>
+    <string name="thu3">Thứ ba</string>
+    <string name="thu4">Thứ tư</string>
+    <string name="thu5">Thứ năm</string>
+    <string name="thu6">Thứ sáu</string>
+    <string name="thu7">Thứ bẩy</string>
+
+    <color name="s1_color_1">#165ba1</color>
+    <color name="s1_color_2">#ff8000</color>
+    <color name="s2_color_1">#f5f5f5</color>
+    <color name="dialog_thongbao_btn_1">#f5f5f5</color>
+    <color name="chooser_normal">#534d4b</color>
+    <color name="color_choose">#165aa1</color>
+    <color name="color_unchoose">#ffffff</color>
+    <color name="color_bangdiem_item_header">#f7eeee</color>
+    <color name="color_vang">#ffc000</color>
+    <color name="color_bac">#00afef</color>
+    <color name="color_dong">#17375e</color>
+    <color name="color_none">#00000000</color>
+
+    <string name="vuaxong">Vừa xong</string>
+    <string name="xphhuttruoc">%s Phút trước</string>
+    <string name="xtiengtruoc">%s Giờ trước</string>
+    <string name="homqua" formatted="false">Hôm qua, Lúc %s:%s</string>
+    <string name="trongtuan" formatted="false">%s, Lúc %s:%s</string>
+    <!-- Ngày 7/3/15, Lúc 11:15 -->
+    <string name="tuantruoc" formatted="false">Ngày %s/%s/%s, Lúc %s:%s</string>
+    <string name="dong">Đóng</string>
+    <string name="batdausudung">Bắt đầu sử dụng</string>
+    <string name="newffeed_noitem">Hiện chưa có bản tin từ phía nhà trường, vui lòng quay lại sau</string>
+    <string name="inbox_noitem">Hiện chưa có bản tin từ phía nhà trường, vui lòng quay lại sau</string>
+    <string name="forum_noitem">Hiện chưa có bản tin từ phía nhà trường, vui lòng quay lại sau</string>
+    <string name="bancomuonhapanhdaidien">Bạn có chắc không muốn nhập ảnh đại diện?</string>
+    <string name="taotopic">TẠO TOPIC</string>
+    <string name="banchuadangnhapfacebook">Bạn chưa đăng nhập Facebook, bạn có muốn đăng nhập ngay bây giờ?</string>
+    <string name="loginfacebook">Login Facebook</string>
+    <string name="chuyentoitrangcanhan">Chuyển tới trang Facebook nhân</string>
+    <string name="share_face_title">App liên kế nhà trường &amp; phụ huynh  </string>
+    <string name="sharethanhcong">Share thành công</string>
+    <string name="khac">Tin nhắn chung</string>
+    <string name="boi"> bởi %s</string>
+    <string name="cannotsendcomment">Viết comment không thành công</string>
+    <string name="thuchienkhongthanhcong">Thực hiện không thành công, Bạn vui lòng kiếm tra lại kết nối mạng.</string>
+    <string name="one_edu_vn">ONE.edu.vn</string>
+    <string name="gui">Gửi</string>
+    <string name="tatca">Tất cả</string>
+    <string name="vietbinhluan">Viết bình luận</string>
+    <string name="taidulieu">Tải dữ liệu...</string>
+    <string name="monhoc">Môn học</string>
+    <string name="diem">Điểm</string>
+    <string name="loaidiem">Loại điểm</string>
+    <string name="diemngayformat">Điểm ngày : %s</string>
+    <string name="hky1">Học kỳ I</string>
+    <string name="hky2">Học kỳ II</string>
+    <string name="cn">Cả năm</string>
+    <string name="diemtongketnamformat">Điểm tổng kết năm : %s</string>
+
+    <color name="color_header">#75cbc4</color>
+    <!-- 75cbc4 -->
+    <color name="color_txt_diem">#585858</color>
+    <color name="color_blue_coaban">#0000ff</color>
+    <color name="color_unchoose_menu">#585858</color>
+
+    <string name="phanhoibangdiemtongket" formatted="false">\n---------------------\n%s</string>
+    <string name="phuhuynhhocsinhphanhoi" formatted="false">\n---------------------\n%s</string>
+    <string name="phuhuyenphanhoitinnhan" formatted="false">\n---------------------\n%s</string>
+    <string name="title1" formatted="false">Phụ huynh %s phản hồi về bảng điểm %s : </string>
+    <string name="title2" formatted="false">Phụ huynh %s phản hồi : </string>
+    <string name="phanhoi">Phản hồi</string>
+    <string name="chiase">Chia sẻ</string>
+    <string name="no_item_bangdiem_tongket">Bảng điểm tổng kết chưa có dữ liệu, vui lòng quay lại sau</string>
+    <string name="no_item_bangdiem_hangngay">Chưa có dữ liệu về điểm hằng ngày</string>
+
+</resources>

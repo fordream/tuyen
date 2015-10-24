@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="one.edu.vn.sms"
+    android:versionCode="4"
+    android:versionName="3.1" >
+
+    <!-- One.Edu.vn.SMS -->
+    <!-- one.edu.vn.sms -->
+    <uses-sdk
+        android:minSdkVersion="13"
+        android:targetSdkVersion="21" />
+
+    <!-- PARSER -->
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- PUSH -->
+    <uses-permission android:name="one.edu.vn.sms.permission.C2D_MESSAGE" />
+
+    <permission
+        android:name="one.edu.vn.sms.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <!--
+    <permission
+        android:name="One.Edu.vn.SMS.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    -->
+    <!-- <uses-permission android:name="vnp.org.moit.permission.C2D_MESSAGE" /> -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name="one.edu.vn.sms.MoITApplication"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="one.edu.vn.sms.S1S2S3Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 
+        <activity
+            android:name="one.edu.vn.sms.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+         -->
+        <!-- FACEBOOK -->
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationName"
+            android:value="@string/app_name" />
+
+        <!-- 330478553722126 -->
+        <!-- 619798398123472 -->
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider330478553722126"
+            android:exported="true" />
+
+        <receiver android:name="one.edu.vn.sms.MoitFacebookBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="com.facebook.platform.AppCallResultBroadcast" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity" />
+
+        <!-- PUSH -->
+        <!-- PARSE -->
+        <service android:name="com.parse.PushService" />
+
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="one.edu.vn.sms" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="one.edu.vn.sms.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="one.edu.vn.sms" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="vnp.org.moit.db.EduDBProvider"
+            android:authorities="vnp.org.moit.db.EduDBProvider" >
+        </provider>
+
+        <service android:name="vnp.org.moit.service.EduSevice" >
+        </service>
+
+        <activity
+            android:name="vnp.org.moit.CreateTopicActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" >
+        </activity>
+    </application>
+
+</manifest>

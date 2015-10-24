@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/bangdiem_top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/bangdiem_top_text"
+            style="@style/style_text_semibold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:text="@string/tatcahocsinh"
+            android:textColor="#585858"
+            android:textSize="@dimen/dimen_16dp" />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_12dp"
+            android:layout_height="@dimen/dimen_5dp"
+            android:background="@drawable/fillter" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bangdiem_top"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:listSelector="@android:color/transparent" >
+
+        <RadioGroup
+            android:id="@+id/bangdiem_rg"
+            android:layout_width="@dimen/dimen_270dp"
+            android:layout_height="@dimen/dimen_29dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:orientation="horizontal"
+            android:weightSum="2" >
+
+            <vnp.org.moit.custom.CustomRadioButton
+                android:id="@+id/bangdiem_r1"
+                style="@style/style_text_semibold"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/a_bangdem_left"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:padding="@dimen/dimen_0dp"
+                android:text="Điểm hàng ngày"
+                android:textSize="@dimen/dimen_13dp" />
+
+            <vnp.org.moit.custom.CustomRadioButton
+                android:id="@+id/bangdiem_r2"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/a_bangdem_right"
+                android:button="@null"
+                android:gravity="center"
+                android:padding="@dimen/dimen_0dp"
+                android:text="Điểm tổng kết"
+                android:textSize="@dimen/dimen_13dp"
+                style="@style/style_text_semibold" />
+        </RadioGroup>
+
+        <ListView
+            android:id="@+id/bangdiem_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bangdiem_rg"
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarThumbHorizontal="@drawable/transfer"
+            android:scrollbarThumbVertical="@drawable/transfer"
+            android:scrollbars="none" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:layout_below="@+id/bangdiem_rg"
+            android:background="#cccccc" />
+
+        <TextView
+            android:id="@+id/bangdiem_empty_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bangdiem_rg"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimen_5dp"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/inbox_noitem"
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/dimen_15dp"
+            android:visibility="gone"
+            style="@style/style_text_normal" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/bangdiem_top"
+        android:background="#cccccc" />
+
+</RelativeLayout>

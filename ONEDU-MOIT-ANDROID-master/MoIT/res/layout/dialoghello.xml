@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <vnp.org.moit.custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHÀO MỪNG"
+        android:textColor="#585858"
+        android:textSize="@dimen/dimen_27dp"
+        android:textStyle="bold"
+        app:txtCustomType="Bold" />
+
+    <vnp.org.moit.custom.CustomTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_6dp"
+        android:gravity="center"
+        android:lineSpacingExtra="@dimen/dimen_6dp"
+        android:text="@string/first_use"
+        android:textColor="#585858"
+        android:textSize="@dimen/dimen_16dp"
+        app:txtCustomType="Regular" />
+
+    <vnp.org.moit.custom.CustomTextView
+        android:id="@+id/dialog_thongbao_btn_2"
+        android:layout_width="@dimen/dimen_215dp"
+        android:layout_height="@dimen/dimen_45dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_40dp"
+        android:background="@drawable/dialog_thongbao_btn_2"
+        android:gravity="center"
+        android:text="@string/batdausudung"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dimen_15dp"
+        android:textStyle="bold"
+        app:txtCustomType="Semibold" />
+
+    <ImageView
+        android:layout_width="@dimen/dimen_252dp"
+        android:layout_height="@dimen/dimen_211dp"
+        android:background="@drawable/hellox" />
+
+</LinearLayout>

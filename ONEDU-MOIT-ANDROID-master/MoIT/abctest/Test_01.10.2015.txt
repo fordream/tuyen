@@ -1,0 +1,67 @@
+﻿
+Test ngày 1/10/2015 (Android): AM
+
+1) Trong trang Tin tức Detail, k rõ cái màu nền màu xanh blue hiện ra là do phía server hay client, theo a thì nên bỏ nó đi, làm giống với bên Forum thì hợp lý hơn.
+
+2) Khi phản hồi tin nhắn, trong phần nội dung mặc định đang để câu: "Phụ huynh Tuan Desu phản hồi: ... (nội dung tin nhắn cũ)"
+  Cầu này theo a thì nên để trên đầu, hoặc tốt nhất là k cần hiện thị cho phụ huynh, chỉ cần tự động add vào đầu tin khi phụ huynh nhấp nút "Gửi", 
+khi đó nhà trường sẽ nhận được phản hồi mới cấu trúc như sau:
+
+- Dòng đầu: Phụ huynh <Tên> phản hồi:
+- Nội dung phản hồi của phụ huynh
+- Dòng các dấu gạch ngang ( -------------------------- )
+- Nội dung tin nhắn cũ (mà nhà người đã gửi cho phụ huynh)
+
+--> Xem file ảnh
+
+3) Trong phần Bảng điểm, các nút Chia sẻ và Phản hồi có style giống với label ngày tháng quá, theo a nên để style khác cho nó nổi, ví dụ như để như một link màu xanh coban, chữ đậm?
+
+- Tương tự, trong tab "Điểm tổng kết", tên của học sinh cũng để nhỏ giống các text khác quá, a nghĩ nên convert tên học sinh thành chữ hoa hết cho nổi.
+
+4) Ở phần "Điểm tổng kết", khi chưa có điểm thì đang hiện thông báo chưa hợp lý: "Hiện chưa có bản tin nào từ phía nhà trường..."
+--> Nên sửa thành: "Bảng điểm tổng kết chưa có dữ liệu, vui lòng quay lại sau"
+--> Bên tab "Điểm hằng ngày" cũng bị như vậy
+
+5) Trong phần Bảng điểm, khi filter theo tên của học sinh thì k hoạt động đúng: có 3 con, trong đó 2 con có điểm, nhưng chỉ hiện được bảng điểm của 1 con; xem "Tất cả" cũng k hiện ra hết.
+==================================================================
+
+PM:
+
+6) Android, json trả về như sau, có điểm học kỳ một của tất cả các môn, nhưng trên App vẫn chỉ hiển thị của mỗi môn Toán (đang hiển thị dữ liệu cũ)
+
+"jSonMark":[{"mon":"Toan","hocky1":6,"hocky2":-1,"canam":-1},{"mon":"Môn Lí","hocky1":6.5,"hocky2":-1,"canam":-1},{"mon":"Hóa","hocky1":6,"hocky2":-1,"canam":-1},{"mon":"Văn học","hocky1":6,"hocky2":-1,"canam":-1},{"mon":"Địa lý","hocky1":6,"hocky2":-1,"canam":-1},{"mon":"Môn Nhạc Họa","hocky1":4,"hocky2":-1,"canam":-1},{"mon":"Tieng Anh","hocky1":8,"hocky2":-1,"canam":-1},{"mon":"Lịch sử","hocky1":7,"hocky2":-1,"canam":-1},{"mon":"Đạo đức","hocky1":7,"hocky2":-1,"canam":-1},{"mon":"Tổng kết","hocky1":6.3,"hocky2":-1,"canam":-1}]
+
+--> Khoảng 30 phút sau mới hiện kết quả điểm mới update
+--> A nghĩ mỗi lần user vào mục bảng điểm tổng kết (hoặc khi chọn học sinh phía trên) thì đều nên refresh lại điểm mới nhất từ server về.
+
+
+7) Về huy hiệu, a thấy chỉ nên hiển thị cho điểm từ 8 trở lên thôi, tức là chỉ cần vàng và bạc, nếu hiển thị nhiều huy hiệu quá sẽ rối mắt
+
+8) iOS: Bảng điểm thi thoảng bị mất header
+
+9) iOS: Bảng điểm thiếu cột Cả Năm
+
+10) iOS: Điểm hiển thị trong bảng điểm có chỗ hiện toàn số 0 hoặc toàn số 9:  0000000, 999999
+
+11) Android + iOS: 
+	- Các row trong bảng điểm nên để height tăng lên chút cho thoáng; bên Điểm hằng ngày cũng vậy;
+	- Các Bảng điểm của các năm nên cách xa nhau 1 chút (hiện ở sát nhau quá); bên phần Điểm hằng ngày cũng thế.
+
+12) Android: Khi phản hồi tin nhắn thì thấy k có nội dung tin nhắn cũ (lúc sáng test thì có hiện được nội dung cũ rồi) 
+
+13) Android: Sau khi cài app, Khi tab vào phần Điểm hằng ngày thì đang báo "Bảng điểm tổng kết chưa có dữ liệu, vui lòng quay lại sau", 
+   --> Phần này nên báo là "Chưa có dữ liệu về điểm hằng ngày", chứ k phải là bảng điểm
+
+14) Liên quan đến lỗi thứ 13 ở trên, thực tế là trong DB có dữ liệu nhưng trên web k hiện ra; lúc tiến hành gửi 1 tin chứa điểm hằng ngày thì chỉ có mỗi tin vừa gửi mới 
+   được hiển thị; một lúc sau, khi click qua lại thì mới hiện được các tin điểm từ buổi sáng.
+
+
+Notes: Xem các file ảnh đính kèm
+
+
+============================
+
+- Lỗi 2) và 12) chưa thấy sửa xong
+- 
+
+

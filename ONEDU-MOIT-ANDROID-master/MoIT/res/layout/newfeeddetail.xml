@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    xmlns:custom="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/newfeeddetail_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/newfeeddetail_controll_send"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_50dp" >
+
+            <ImageView
+                android:id="@+id/newfeeddetail_like"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_alignParentRight="true"
+                android:padding="@dimen/dimen_16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/heart" />
+
+            <ImageView
+                android:id="@+id/newfeeddetail_back"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:padding="@dimen/dimen_16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/mback" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dimen_50dp"
+                android:paddingRight="@dimen/dimen_50dp" >
+
+                <vnp.org.moit.custom.CustomTextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="Harvard Chùa Láng"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="#585858"
+                    android:textSize="@dimen/dimen_16dp"
+                    android:textStyle="bold"
+                    custom:txtCustomType="Semibold" />
+
+                <vnp.org.moit.custom.CustomTextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="6 giờ trước"
+                    android:textColor="#585858"
+                    android:textSize="@dimen/dimen_9dp"
+                    custom:txtCustomType="Semibold" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="#e5e5e5" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/feeddetail_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null" android:listSelector="@android:color/transparent"
+            android:dividerHeight="0px" >
+        </ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/newfeeddetail_controll_send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#f5f5f5"
+        android:gravity="center"
+        android:padding="@dimen/dimen_10dp" >
+
+        <vnp.org.moit.custom.CustomEditText
+            android:id="@+id/editText1"
+            android:layout_width="@dimen/dimen_240dp"
+            android:layout_height="@dimen/dimen_35dp"
+            android:background="@drawable/newfeeddetail_edt"
+            android:hint="@string/vietbinhluan"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_10dp"
+            android:textColor="@android:color/black"
+            android:textColorHint="#cacaca"
+            android:textSize="@dimen/dimen_16dp"
+            app:txtCustomType="Regular" />
+
+        <vnp.org.moit.custom.CustomTextView
+            android:id="@+id/newfeeddetail_send"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/dimen_35dp"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/gui"
+            android:textColor="#165aa1"
+            android:textSize="@dimen/dimen_12dp"
+            android:textStyle="bold"
+            custom:txtCustomType="Semibold" />
+    </LinearLayout>
+
+</RelativeLayout>

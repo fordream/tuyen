@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dimen_10dp"
+    android:paddingRight="@dimen/dimen_10dp"
+    android:paddingTop="@dimen/dimen_10dp" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp" >
+
+        <ImageView
+            android:id="@+id/newfeed_avatar"
+            android:layout_width="@dimen/dimen_35dp"
+            android:layout_height="@dimen/dimen_35dp"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/control_newiewm"
+            android:layout_toRightOf="@+id/newfeed_avatar"
+            android:gravity="center|left"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/dimen_10dp"
+            android:paddingRight="@dimen/dimen_0dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="TextView"
+                android:textColor="#585858"
+                android:textSize="@dimen/dimen_13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:text="TextView"
+                android:textColor="#5a5a5a"
+                android:textSize="@dimen/dimen_10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/control_newiewm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="@dimen/dimen_15dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:src="@drawable/heart" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:paddingRight="@dimen/dimen_5dp"
+                android:text="150"
+                android:textColor="#585858"
+                android:textSize="@dimen/dimen_10dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="@dimen/dimen_15dp"
+                android:layout_height="@dimen/dimen_15dp"
+                android:src="@drawable/comment" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/dimen_5dp"
+                android:paddingRight="@dimen/dimen_5dp"
+                android:text="9"
+                android:textColor="#585858"
+                android:textSize="@dimen/dimen_10dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/newfeed_img_main"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_180dp"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:text="ÁNH VIÊN BẤT NGỜ VÀO CHUNG KẾT  CÚP THẾ GIỚI 2015"
+        android:textColor="#000000"
+        android:textSize="@dimen/dimen_16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="@dimen/dimen_3dp"
+        android:text="“Kình ngư” Nguyễn Thị Ánh Viên đã gây sốc khi lọt  vào nhóm 8 n “Kình ngư” Nguyễn Thị Ánh Viên đã gây sốc khi lọt  vào nhóm 8 n “Kình ngư” Nguyễn Thị Ánh Viên đã gây sốc khi lọt  vào nhóm 8 n"
+        android:textColor="#585858"
+        android:textSize="@dimen/dimen_10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Đọc tiếp"
+        android:textColor="#215fa3"
+        android:textSize="@dimen/dimen_10dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:background="#cccccc" />
+
+</LinearLayout>

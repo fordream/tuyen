@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    xmlns:custom="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/empty_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <vnp.org.moit.custom.CustomTextView
+            android:id="@+id/empty_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimen_5dp"
+            android:padding="@dimen/dimen_10dp"
+            android:text="Các bác chỉ em làm sao để tắt cái  bảng này ? Mỗi khi em mở mạng lên là nó lại hiện ra."
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/dimen_15dp"
+            custom:txtCustomType="Regular" />
+
+    </LinearLayout>
+
+</LinearLayout>

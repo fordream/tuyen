@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/inbox_top"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+<!-- android:textStyle="bold" -->
+        <TextView
+            style="@style/style_text_semibold"
+            android:id="@+id/inbox_top_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_5dp"
+            android:text="Tất cả học sinh"
+            android:textColor="#585858"
+            android:textSize="@dimen/dimen_16dp"
+            
+     />
+
+        <ImageView
+            android:layout_width="@dimen/dimen_12dp"
+            android:layout_height="@dimen/dimen_5dp"
+            android:background="@drawable/fillter" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/inbox_top"
+        android:divider="@null"
+        android:dividerHeight="0px"
+        android:listSelector="@android:color/transparent" >
+
+        <ListView
+            android:id="@+id/inbox_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="0px"
+            android:listSelector="@android:color/transparent"
+            android:scrollbarThumbHorizontal="@drawable/transfer"
+            android:scrollbarThumbVertical="@drawable/transfer"
+            android:scrollbars="none" />
+
+        <TextView
+            style="@style/style_text_normal"
+            android:id="@+id/inbox_empty_txt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimen_5dp"
+            android:padding="@dimen/dimen_10dp"
+            android:text="@string/inbox_noitem"
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/dimen_15dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/inbox_top"
+        android:background="#cccccc" />
+
+</RelativeLayout>

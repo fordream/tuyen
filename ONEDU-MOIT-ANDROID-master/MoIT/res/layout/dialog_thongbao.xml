@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/one.edu.vn.sms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99999999"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_25dp"
+        android:layout_marginRight="@dimen/dimen_25dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:paddingLeft="@dimen/dimen_10dp"
+        android:paddingRight="@dimen/dimen_10dp"
+        android:paddingTop="@dimen/dimen_0dp" >
+
+        <vnp.org.moit.custom.CustomTextView  android:textSize="@dimen/dimen_17dp" app:txtCustomType="Bold"    android:textColor="#585858"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:text="Thông báo"
+         
+           
+            android:textStyle="bold"
+           />
+
+        <vnp.org.moit.custom.CustomTextView
+            android:id="@+id/dialog_thongbao_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimen_5dp"
+            android:text="Các bác chỉ em làm sao để tắt cái  bảng này ? Mỗi khi em mở mạng lên là nó lại hiện ra."
+            android:textColor="#8d8d8d"
+            android:textSize="@dimen/dimen_15dp"
+            app:txtCustomType="Regular" />
+
+        <vnp.org.moit.custom.CustomTextView android:gravity="center"  android:textSize="@dimen/dimen_15dp" app:txtCustomType="Semibold"
+            android:id="@+id/dialog_thongbao_btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            android:background="@drawable/dialog_thongbao_btn_1"
+            
+            android:text="QUAY LẠI"
+            android:textColor="#545454"
+           
+            android:textStyle="bold"
+             />
+
+        <vnp.org.moit.custom.CustomTextView
+            android:id="@+id/dialog_thongbao_btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_42dp"
+            android:layout_marginTop="@dimen/dimen_13dp"
+            android:background="@drawable/dialog_thongbao_btn_2"
+            android:gravity="center"
+            android:text="ĐÓNG"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dimen_15dp"
+            android:textStyle="bold"
+            app:txtCustomType="Semibold" />
+    </LinearLayout>
+
+</LinearLayout>

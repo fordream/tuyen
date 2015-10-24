@@ -1,0 +1,94 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (434C41535326494C453041525345520E4350500AB6), pid=5284, tid=4452
+#
+# Java VM: Java HotSpot(TM) Client VM (1.6.0-b105 mixed mode)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00277800):  JavaThread "Unknown thread" [_thread_in_vm, id=4452]
+
+Stack: [0x003a0000,0x003f0000)
+[error occurred during error reporting, step 110, id 0xc00000fd]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [javaw.exe+0xc07c]
+C  [javaw.exe+0x7d35]
+C  [kernel32.dll+0x53c45]
+C  [ntdll.dll+0x637f5]
+C  [ntdll.dll+0x637c8]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+VM state:not at safepoint (not fully initilizated)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap
+ def new generation   total 960K, used 0K [0x03a20000, 0x03b20000, 0x03f00000)
+  eden space 896K,   0% used [0x03a20000, 0x03a20000, 0x03b00000)
+  from space 64K,   0% used [0x03b00000, 0x03b00000, 0x03b10000)
+  to   space 64K,   0% used [0x03b10000, 0x03b10000, 0x03b20000)
+ tenured generation   total 4096K, used 0K [0x03f00000, 0x04300000, 0x07a20000)
+   the space 4096K,   0% used [0x03f00000, 0x03f00000, 0x03f00200, 0x04300000)
+ compacting perm gen  total 12288K, used 103K [0x07a20000, 0x08620000, 0x0ba20000)
+   the space 12288K,   0% used [0x07a20000, 0x07a39e40, 0x07a3a000, 0x08620000)
+No shared spaces configured.
+
+Dynamic libraries:
+0x00400000 - 0x00423000 	C:\Program Files\Java\jre1.6.0\bin\javaw.exe
+0x771b0000 - 0x772ec000 	C:\Windows\SYSTEM32\ntdll.dll
+0x75c20000 - 0x75cf4000 	C:\Windows\system32\kernel32.dll
+0x755b0000 - 0x755fa000 	C:\Windows\system32\KERNELBASE.dll
+0x77320000 - 0x773c0000 	C:\Windows\system32\ADVAPI32.dll
+0x759c0000 - 0x75a6c000 	C:\Windows\system32\msvcrt.dll
+0x773c0000 - 0x773d9000 	C:\Windows\SYSTEM32\sechost.dll
+0x75d50000 - 0x75df1000 	C:\Windows\system32\RPCRT4.dll
+0x75b50000 - 0x75c19000 	C:\Windows\system32\USER32.dll
+0x75d00000 - 0x75d4e000 	C:\Windows\system32\GDI32.dll
+0x75600000 - 0x7560a000 	C:\Windows\system32\LPK.dll
+0x75a70000 - 0x75b0d000 	C:\Windows\system32\USP10.dll
+0x75e00000 - 0x75e1f000 	C:\Windows\system32\IMM32.DLL
+0x75f80000 - 0x7604c000 	C:\Windows\system32\MSCTF.dll
+0x7c340000 - 0x7c396000 	C:\Program Files\Java\jre1.6.0\bin\msvcr71.dll
+0x6d7c0000 - 0x6da07000 	C:\Program Files\Java\jre1.6.0\bin\client\jvm.dll
+0x70690000 - 0x706c2000 	C:\Windows\system32\WINMM.dll
+0x75200000 - 0x7524c000 	C:\Windows\system32\apphelp.dll
+0x6d310000 - 0x6d318000 	C:\Program Files\Java\jre1.6.0\bin\hpi.dll
+0x77010000 - 0x77015000 	C:\Windows\system32\PSAPI.DLL
+0x6d770000 - 0x6d77c000 	C:\Program Files\Java\jre1.6.0\bin\verify.dll
+0x6d3b0000 - 0x6d3cf000 	C:\Program Files\Java\jre1.6.0\bin\java.dll
+0x6d7b0000 - 0x6d7bf000 	C:\Program Files\Java\jre1.6.0\bin\zip.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=UTF-8 -Xbootclasspath:D:\setup\studio SDK\platforms\android-19\android.jar
+java_command: one.edu.vn.sms.html.GemCodeHtml
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=C:/Program Files/Java/jre1.6.0/bin/client;C:/Program Files/Java/jre1.6.0/bin;C:/Program Files/Java/jre1.6.0/lib/i386;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\Skype\Phone\;D:\setup\eclipse;
+USERNAME=truongvv
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=x86 Family 6 Model 23 Stepping 10, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7601 Service Pack 1
+
+CPU:total 2 family 6, cmov, cx8, fxsr, mmx, sse, sse2
+
+Memory: 4k page, physical 2086192k(828340k free), swap 4172384k(1912072k free)
+
+vm_info: Java HotSpot(TM) Client VM (1.6.0-b105) for windows-x86, built on Nov 29 2006 00:48:48 by "java_re" with unknown MS VC++:1310
+
