@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/loginactivity_btncancel"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/loginactivity_img"
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:background="@drawable/login_icon" />
+
+        <LinearLayout
+            android:id="@+id/loginactivity_edt1_background"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_emal"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/loginactivity_edt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#00000000"
+                android:ems="10"
+                android:hint="@string/email"
+                android:text="tu@gmail.com" >
+            </EditText>
+        </LinearLayout>
+
+        <!-- nmtnmt123 -->
+
+        <LinearLayout
+            android:id="@+id/loginactivity_edt2_background"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_password"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <EditText
+                android:id="@+id/loginactivity_edt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00000000"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:text="123456" />
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="5dp"
+            android:id="@+id/loginactivity_button1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnlogin" />
+
+        <Button
+            android:id="@+id/loginactivity_button2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnforgot" />
+
+        <TextView
+            android:id="@+id/loginactivity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/notyet" />
+
+        <Button
+            android:id="@+id/loginactivity_butto3"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btnregister" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginactivity_btncancel"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/btncancel" />
+
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <vnp.mr.mintmedical.HeaderView
+        android:id="@+id/activitymain_headerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+    </vnp.mr.mintmedical.HeaderView>
+    <LinearLayout
+        android:id="@+id/s6bcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical" >
+
+            <vnp.mr.mintmedical.view.S6BItemView
+                android:id="@+id/s6bitem1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </vnp.mr.mintmedical.view.S6BItemView>
+
+            <vnp.mr.mintmedical.view.S6BItemView
+                android:id="@+id/s6bitem2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </vnp.mr.mintmedical.view.S6BItemView>
+
+            <vnp.mr.mintmedical.view.S6BItemView
+                android:id="@+id/s6bitem3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </vnp.mr.mintmedical.view.S6BItemView>
+
+            <vnp.mr.mintmedical.view.S6BItemView
+                android:id="@+id/s6bitem4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </vnp.mr.mintmedical.view.S6BItemView>
+
+            <LinearLayout
+                android:id="@+id/s6blin"
+                android:layout_width="match_parent"
+                android:layout_height="1dip"
+                android:background="@color/listview_spac"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <vnp.mr.mintmedical.view.S6BItemView
+                android:id="@+id/s6bitem5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </vnp.mr.mintmedical.view.S6BItemView>
+
+            <vnp.mr.mintmedical.view.S6BItemView
+                android:id="@+id/s6bitem6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </vnp.mr.mintmedical.view.S6BItemView>
+
+            <EditText
+                android:padding="5dip"
+                android:gravity="top"
+                android:id="@+id/s6btextview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/s5_edt"
+                android:lines="3"
+                android:maxLines="3" />
+
+            <Button
+                android:id="@+id/s6bbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/s5_button" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

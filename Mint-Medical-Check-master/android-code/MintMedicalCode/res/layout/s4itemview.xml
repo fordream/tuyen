@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/s4ditemview_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/s4ditemview_textheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Large Text"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#e24f02"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <LinearLayout
+            android:id="@+id/s11spac"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/listview_spac"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/s4_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/s4itemview_content_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center|top"
+            android:orientation="horizontal" >
+
+            <vnp.mr.mintmedical.view.AvatarView
+                android:id="@+id/s4ditemview_avatarView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </vnp.mr.mintmedical.view.AvatarView>
+
+            <LinearLayout
+                android:id="@+id/id001"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+
+                <ImageView
+                    android:id="@+id/s4ditemview_img2"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@drawable/main_item_img2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/s4ditemview_content"
+                android:layout_width="150dip"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/id001"
+                android:layout_toRightOf="@+id/s4ditemview_avatarView1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/s4ditemview_textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/s4ditemview_textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#999999" />
+
+                <TextView
+                    android:id="@+id/s4ditemview_textview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:maxLines="2"
+                    android:textColor="#999999" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/s11spac"
+            android:layout_width="match_parent"
+            android:layout_height="1dip"
+            android:background="@color/listview_spac"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

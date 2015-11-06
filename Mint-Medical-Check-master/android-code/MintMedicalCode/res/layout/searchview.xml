@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/searchview_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/searchview_edt"
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:background="@drawable/s4h_edtseartch"
+        android:gravity="center"
+        android:hint="@string/searchfordoctorname"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:singleLine="true" >
+    </EditText>
+
+</LinearLayout>

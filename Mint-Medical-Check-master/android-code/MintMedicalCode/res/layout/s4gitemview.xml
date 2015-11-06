@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/s4gitem_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/s4gitemview_content_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/s4gitemview_content1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <LinearLayout
+                    android:id="@+id/s4gitemview_content"
+                    android:layout_width="150dip"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_toLeftOf="@+id/s4gitemview_textview3"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:textColor="#333333"
+                        android:id="@+id/s4gitemview_textview1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="TextView"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:textColor="#999999"
+                        android:id="@+id/s4gitemview_textview2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="2"
+                        android:text="TextView" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/s4gitemview_textview3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dip"
+                    android:textColor="#e24f02"
+                    android:text="TextView" />
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/s4gitemview_img2"
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:background="@drawable/main_item_img2" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/s11spac"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@color/listview_spac"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

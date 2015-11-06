@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/s4ditem_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/s4ditemview_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/s4ditemview_textheader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Large Text"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#e24f02"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <LinearLayout
+                android:id="@+id/s11spac"
+                android:layout_width="match_parent"
+                android:layout_height="2dip"
+                android:background="@color/listview_spac"
+                android:orientation="horizontal" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/s4itemview_content_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|top"
+            android:orientation="horizontal" >
+
+            <vnp.mr.mintmedical.view.AvatarView
+                android:id="@+id/s4ditemviewavatarView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </vnp.mr.mintmedical.view.AvatarView>
+
+            <LinearLayout
+                android:id="@+id/id_m1"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true" >
+
+                <LinearLayout
+                    
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#333333"
+                        android:textStyle="bold"
+                        android:typeface="serif" />
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="#999999" />
+
+                    <TextView
+                        android:id="@+id/s4ditemview_textview4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="TextView"
+                        android:textColor="#e24f02" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/s4ditemview_img2"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:background="@drawable/main_item_img2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/s4ditemview_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/id_m1"
+                android:layout_toRightOf="@+id/s4ditemviewavatarView1"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/s4ditemview_textview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/s4ditemview_textview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#999999" />
+
+                <TextView
+                    android:id="@+id/s4ditemview_textview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#999999" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/s11spac"
+            android:layout_width="match_parent"
+            android:layout_height="2dip"
+            android:background="@color/listview_spac"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

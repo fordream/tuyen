@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/s10_background"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+
+    <vnp.mr.mintmedical.HeaderView
+        android:id="@+id/aboutactivity_headerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+    </vnp.mr.mintmedical.HeaderView>
+    <ImageView
+        android:id="@+id/aboutactivity_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/aboutactivity_headerview" />
+
+    <LinearLayout
+        android:id="@+id/s10maon_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/s10a_textview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip"
+            android:text="@string/s10b_1"
+            android:textColor="@android:color/black"
+            android:typeface="serif" />
+
+        <TextView
+            android:gravity="top"
+            android:id="@+id/s10a_textview2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/s10a_3"
+            android:textColor="#9f9f9f" />
+
+    </LinearLayout>
+
+</LinearLayout>

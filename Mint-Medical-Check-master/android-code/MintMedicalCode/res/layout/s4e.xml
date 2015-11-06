@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center|top"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/s4e_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|top"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:paddingTop="10dip"
+            android:paddingBottom="10dp"
+            android:background="#f6f6f6"
+            android:id="@+id/s4e_content_doctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <vnp.mr.mintmedical.view.AvatarView
+                android:id="@+id/s4e_avatarView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+            </vnp.mr.mintmedical.view.AvatarView>
+
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/s4e_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#e24f02"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:id="@+id/s4e_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView"
+                    android:textColor="#333333"
+                    android:typeface="serif" />
+
+                <TextView
+                    android:textColor="#999999"
+                    android:id="@+id/s4e_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:textColor="#999999"
+                    android:id="@+id/s4e_text4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/s4e_s1"
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/s4e_text5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="@string/visittype"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <TextView
+                android:textColor="#999999"
+                android:id="@+id/s4e_text6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reasonforthisvisit" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="10dip"
+            android:id="@+id/s4e_map"
+            android:layout_width="match_parent"
+            android:layout_height="100dip"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/s4e_bnt"
+            android:background="@drawable/s4e_button"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>
